@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Карточка товара «Ананасовый улун» для интернет-магазина Teaboom"
-    />
+    <meta name="description" content="Карточка товара «Ананасовый улун» для Teaboom" />
     <title>Ананасовый улун — Teaboom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./scripts/product.js" defer></script>
   </head>
@@ -15,91 +18,120 @@
   <body>
     <main class="page">
       <article class="product" aria-labelledby="product-title">
-        <div class="product__gallery">
-          <img
-            class="product__image"
-            src="https://media.teaboom.ru/images/e4bb1618-fb80-41e2-8758-86f884ce095d.jpg"
-            alt="Листья чая «Ананасовый улун»"
-            width="570"
-            height="570"
-          />
-        </div>
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="#">Начало</a></li>
+            <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+            <li class="breadcrumbs__item"><a href="#">Улун</a></li>
+            <li class="breadcrumbs__item" aria-current="page">Ананасовый улун</li>
+          </ol>
+        </nav>
 
-        <div class="product__content">
-          <header class="product__header">
-            <p class="product__category">Улун</p>
-            <h1 class="product__title" id="product-title">Ананасовый улун</h1>
-          </header>
+        <header class="product__header">
+          <p class="product__category">Улун</p>
+          <h1 class="product__title" id="product-title">Ананасовый улун</h1>
+        </header>
 
-          <form class="product__form">
-            <fieldset class="product__options">
-              <legend class="product__legend">Выберите фасовку</legend>
-
-              <div class="weight-options">
-                <label class="weight-option">
-                  <input
-                    class="weight-option__input"
-                    type="radio"
-                    name="weight"
-                    value="100"
-                    checked
+        <div class="product__main">
+          <div class="product__gallery">
+            <div class="product__image-link">
+              <img
+                class="product__image"
+                src="./assets/ananasovij-ulun.jpg"
+                alt="Листья чая «Ананасовый улун»"
+                width="800"
+                height="800"
+              />
+              <span class="product__zoom" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                  <path
+                    d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-8-3v6m-3-3h6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
                   />
-                  <span class="weight-option__label">100 г</span>
-                </label>
-
-                <label class="weight-option">
-                  <input
-                    class="weight-option__input"
-                    type="radio"
-                    name="weight"
-                    value="500"
-                  />
-                  <span class="weight-option__label">500 г</span>
-                </label>
-
-                <label class="weight-option">
-                  <input
-                    class="weight-option__input"
-                    type="radio"
-                    name="weight"
-                    value="1000"
-                  />
-                  <span class="weight-option__label">1000 г</span>
-                </label>
-
-                <label class="weight-option">
-                  <input
-                    class="weight-option__input"
-                    type="radio"
-                    name="weight"
-                    value="5000"
-                  />
-                  <span class="weight-option__label">5000 г</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <p class="product__sku">арт. <span id="product-sku">01306</span></p>
-
-            <div class="product__buy-row">
-              <p class="product__prices" aria-live="polite">
-                <del class="product__old-price" id="product-old-price">349,20 ₽</del>
-                <strong class="product__price" id="product-price">326,40 ₽</strong>
-              </p>
-
-              <button class="product__cart-button" type="button">В корзину</button>
+                </svg>
+              </span>
             </div>
-          </form>
+            <div class="product__thumbnail" aria-hidden="true">
+              <img src="./assets/ananasovij-ulun.jpg" alt="" width="72" height="72" />
+            </div>
+          </div>
 
-          <section class="product__description" aria-labelledby="description-title">
-            <h2 class="product__description-title" id="description-title">Описание</h2>
-            <p>
-              Состав: китайский бирюзовый чай, цукаты, натуральные ароматические масла.
-              Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый
-              крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь.
-            </p>
-          </section>
+          <div class="product__content">
+            <a class="product__review-link" href="#description-title">
+              <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
+                <path
+                  d="M20 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+              </svg>
+              Оставить отзыв
+            </a>
+
+            <form class="product__form">
+              <fieldset class="product__options">
+                <legend class="product__legend">Выберите фасовку</legend>
+                <div class="weight-options">
+                  <label class="weight-option">
+                    <input class="weight-option__input" type="radio" name="weight" value="100" checked />
+                    <span class="weight-option__label">100 г</span>
+                  </label>
+                  <label class="weight-option">
+                    <input class="weight-option__input" type="radio" name="weight" value="500" />
+                    <span class="weight-option__label">500 г</span>
+                  </label>
+                  <label class="weight-option">
+                    <input class="weight-option__input" type="radio" name="weight" value="1000" />
+                    <span class="weight-option__label">1000 г</span>
+                  </label>
+                  <label class="weight-option">
+                    <input class="weight-option__input" type="radio" name="weight" value="5000" />
+                    <span class="weight-option__label">5000 г</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <p class="product__sku">арт: <span id="product-sku">01306</span></p>
+
+              <div class="product__buy-row">
+                <p class="product__prices" aria-live="polite">
+                  <del class="product__old-price" id="product-old-price">349,20 ₽</del>
+                  <strong class="product__price" id="product-price">326,40 ₽</strong>
+                </p>
+                <button class="product__cart-button" type="button">
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                    <path
+                      d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H6m4 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+
+        <section class="product__description" aria-labelledby="description-title">
+          <h2 class="product__description-title" id="description-title">Описание</h2>
+          <div class="product__description-content">
+            <p>
+              <strong>Состав:</strong> китайский бирюзовый чай, цукаты, натуральные
+              ароматические масла. Светлый Фуцзяньский улун с ароматом ананаса. В сухом
+              виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий
+              Те Гуань Инь.
+            </p>
+          </div>
+        </section>
       </article>
     </main>
   </body>
