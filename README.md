@@ -3,6 +3,8 @@
 Тестовое задание: адаптивная карточка товара «Ананасовый улун» в стилистике
 действующего сайта [Teaboom.ru](https://teaboom.ru/product/ananasovij-ulun).
 
+**Демо:** [wightles.github.io/teaboom](https://wightles.github.io/teaboom/)
+
 ## Возможности
 
 - переключение между четырьмя фасовками;
